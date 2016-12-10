@@ -1,0 +1,158 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="SquareGamesFarid.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- LOCALIZATION NOTE:
+            To localize the displayed strings copy their values to appropriately named
+            keys in the app's neutral language resource file (AppResources.resx) then
+            replace the hard-coded text value between the attributes' quotation marks
+            with the binding clause whose path points to that string name.
+
+            For example:
+
+                Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
+
+            This binding points to the template's string resource named "ApplicationTitle".
+
+            Adding supported languages in the Project Properties tab will create a
+            new resx file per language that can carry the translated values of your
+            UI strings. The binding in these examples will cause the value of the
+            attributes to be drawn from the .resx file that matches the
+            CurrentUICulture of the app at run time.
+         -->
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <TextBlock Text="Taquin With Friends " Style="{StaticResource PhoneTextNormalStyle}" Margin="26,37,10,622" Grid.Row="1"/>
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"/>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Canvas x:Name="rootCanvas" Margin="0,75,28,0">
+                <Rectangle Height="100" Width="100" x:Name="recta">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p1.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectb">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p2.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectc">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p3.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectd">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p4.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="recte">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p5.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectf">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p6.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectg">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p7.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="recth">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p8.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="recti">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p9.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectj">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p10.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectk">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p11.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectl">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p12.png" />
+                    </Rectangle.Fill>
+                </Rectangle> 
+                <Rectangle Height="100" Width="100" x:Name="rectm">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p13.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="rectn">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p14.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle Height="100" Width="100" x:Name="recto">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Assets/p15.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <TextBlock Text="1" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="texta" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="2" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="textb" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="3" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="textc" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="4" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="textd" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="5" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="texte" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="6" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="textf" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="7" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="textg" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="8" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="texth" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="9" Style="{StaticResource PhoneTextNormalStyle}"  x:Name="texti" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="10" Style="{StaticResource PhoneTextNormalStyle}" x:Name="textj" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="12" Style="{StaticResource PhoneTextNormalStyle}" x:Name="textk" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="11" Style="{StaticResource PhoneTextNormalStyle}" x:Name="textl" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="13" Style="{StaticResource PhoneTextNormalStyle}" x:Name="textm" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="14" Style="{StaticResource PhoneTextNormalStyle}" x:Name="textn" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <TextBlock Text="15" Style="{StaticResource PhoneTextNormalStyle}" x:Name="texto" Height="723" Canvas.Left="12" Margin="0" Width="432" />
+                <!-- Create three Rectangle elements and position them using Canvas.Top and Canvas.Left -->
+
+            </Canvas>
+            <Button Content="New Game" HorizontalAlignment="Left" VerticalAlignment="Top" Width="169" Margin="0,98,0,0" Click="newGame"/>
+            <TextBlock HorizontalAlignment="Left" Margin="259,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="60" x:Name="move"/>
+            <TextBlock HorizontalAlignment="Left" Margin="346,120,0,0" TextWrapping="Wrap" Text="MOVE" VerticalAlignment="Top" Height="50"/>
+            <Button Content="Save" HorizontalAlignment="Left" Margin="156,98,0,0" VerticalAlignment="Top" Click="Save"/>
+
+        </Grid>
+
+        <!--Uncomment to see an alignment grid to help ensure your controls are
+            aligned on common boundaries.  The image has a top margin of -32px to
+            account for the System Tray. Set this to 0 (or remove the margin altogether)
+            if the System Tray is hidden.
+
+            Before shipping remove this XAML and the image itself.-->
+        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
+    </Grid>
+
+</phone:PhoneApplicationPage>
